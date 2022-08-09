@@ -1,22 +1,21 @@
-import logo from './logo.svg';
 import './styles/App.css';
 import VerifyForm from './components/VerifyForm';
+import Footer from './components/Footer';
+import drone from './assets/images/drone.jpg';
 
 
 function App() {
   return (
     <div className="App">
       <header className="header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          
+        <p className="container m-0 text-left">
+          Drone Drop Delivery Service
         </p>
+        <img src={drone} className="logo" alt='logo'/>
       </header>
-      <body>
-        <VerifyForm>
-        </VerifyForm>
-      </body>
-      <footer />
+      <VerifyForm>
+      </VerifyForm>
+      <Footer />
     </div>
   );
 }

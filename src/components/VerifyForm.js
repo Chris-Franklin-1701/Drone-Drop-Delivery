@@ -29,7 +29,7 @@ const VerifyForm = () => {
         .catch((errorData) => setVerificationResult(errorData.message))
 
     return (
-        <div className="App" style={customStyles}>
+        <div className="Form" style={customStyles}>
             <Autocomplete
                     apiKey="live_pub_f5b5b72af120bd8635ea95388bc2a61"
                     onSelection={(selected) => setSelectedAddress(selected.value)}

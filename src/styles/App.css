@@ -5,22 +5,34 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+.body{
   background-color: white;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .header{
-  background-color: aquamarine;
+  background-color:deepskyblue;
   height: 200px;
   display: flex;
   color: black;
+  width: 100vw;
 }
 
 .footer{
-  background-color: darkslategray;
-  height: 200px;
-  color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  background-color:darkslategray;
+  color:darkcyan;
+}
+
+.icon{
+  color:cadetblue
+}
+
+.Form{
+  margin-top: 200px;
 }
