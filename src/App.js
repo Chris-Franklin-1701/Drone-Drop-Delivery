@@ -16,8 +16,7 @@ function App() {
         <VerifyForm>
         </VerifyForm>
       </body>
-      <footer>
-      </footer>
+      <footer />
     </div>
   );
 }
