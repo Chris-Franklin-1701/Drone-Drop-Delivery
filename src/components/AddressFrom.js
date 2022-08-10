@@ -4,13 +4,7 @@ import '../styles/App.css';
 class AddressForm extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {
-            name: '',
-            street_address: '',
-            city: '',
-            state: '',
-            zip_code: ''
-        }
+        this.state = this.initialState()
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
         this.autocomplete = null
@@ -27,7 +21,7 @@ class AddressForm extends React.Component {
     }
 
     handleChange(event) {
-        this.setState({value: event.target.value});
+        this.setState({[event.target.name]: event.target.value});
     }
 
     handleSubmit(event) {
