@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
-import { Autocomplete, verify } from '@lob/react-address-autocomplete'
+import { AddressForm, verify } from '@lob/react-address-autocomplete'
 
+//lob Autocomplete and Validation/Verification API
+
+//Creates custom Style predetermined by lob.
 const customStyles = {
     lob_container: provided => ({
         ...provided,
@@ -30,11 +33,11 @@ const VerifyForm = () => {
 
     return (
         <div className="Form" style={customStyles}>
-            <Autocomplete
-                    apiKey="live_pub_f5b5b72af120bd8635ea95388bc2a61"
-                    onSelection={(selected) => setSelectedAddress(selected.value)}
-                    styles={customStyles}
-        />
+            <AddressForm
+                apiKey="live_pub_f5b5b72af120bd8635ea95388bc2a61"
+                onSelection={selected => setSelectedAddress(selected.value)}
+                styles={customStyles}
+            />
         <p>
             <button onClick={verifyAddress}>Verify</button>
         </p>
